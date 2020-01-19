@@ -1,1 +1,48 @@
-
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Australia Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 10;
+        padding: 10;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to Sydney</h1>
+    <p> Click here to return to Australia</p>
+    <div id="map"></div>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), 
+          {
+          center: {lat: -33.868, lng: 151.209},
+          zoom: 3
+          }
+       
+        
+         );
+        //var beachMarker = new google.maps.Marker({
+         // position {lat: -33.890, lng: 151.2743},
+          //map: mapobject,
+          //icon: image});
+        
+         }
+                                                 
+    </script>   
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsMVHXb919Coh5Kx_UyZo09xce7iY8Ncw&callback=initMap"
+    async defer></script>
+  </body>
+</html>
