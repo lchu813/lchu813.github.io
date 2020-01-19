@@ -10,7 +10,7 @@
     </style>
   </head>
   <body>
-    <h3>My Google Maps Demo</h3>
+    <h3>Australia with lots of markers</h3>
     <!--The div element for the map -->
     <div id="map"></div>
     <script>
@@ -18,11 +18,15 @@
 function initMap() {
   // The location of Uluru
   var uluru = {lat: -25.344, lng: 131.036};
+  var Sydney = {};
+  var Perth = {};
   // The map, centered at Uluru
   var map = new google.maps.Map(
       document.getElementById('map'), {zoom: 4, center: uluru});
   // The marker, positioned at Uluru
   var marker = new google.maps.Marker({position: uluru, map: map});
+  var marker2 = new google.maps.Marker({position: Sydney, map: map});
+  var marker3 = new google.maps.Marker({position: Perth, map: map});
 }
     </script>
     <!--Load the API from the specified URL
