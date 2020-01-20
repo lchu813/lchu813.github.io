@@ -10,19 +10,19 @@
   </head>
   <body>
     <h1>Fleming College Campuses</h1>
-    <div id="map1"></div>
+    <div id="map"></div>
     <script>
 
 function initMap() {
 //Lindsay
-  var lindsay = {lat: -25.344, lng: 131.036};
+//  var lindsay = {lat: -25.344, lng: 131.036};
 //Peterb
   var peterb= {lat: -25.344, lng: 131.036};
 //Peterb
   var map = new google.maps.Map(
-      document.getElementById('map1'), {zoom: 4, center: peterb});\
+      document.getElementById('map'), {zoom: 4, center: peterb});
 //markerLindsay
-  var marker = new google.maps.Marker({position: lindsay, map: map});
+  var marker = new google.maps.Marker({position: peterb, map: map});
 }
     </script>
     
