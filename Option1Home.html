@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
+  </head>
+  <body>
+    <h1>Fleming College Campuses</h1>
+    <div id="map1"></div>
+    <script>
+
+function initMap() {
+//Lindsay
+  var lindsay = {lat: -25.344, lng: 131.036};
+//Peterb
+  var peterb= {lat: -25.344, lng: 131.036};
+//Peterb
+  var map = new google.maps.Map(
+      document.getElementById('map1'), {zoom: 4, center: peterb});\
+//markerLindsay
+  var marker = new google.maps.Marker({position: lindsay, map: map});
+}
+    </script>
+    
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsMVHXb919Coh5Kx_UyZo09xce7iY8Ncw&callback=initMap">
+    </script>
+  </body>
+</html>
