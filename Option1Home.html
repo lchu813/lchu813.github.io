@@ -68,7 +68,9 @@ function initMap() {
 //markertoronto
   var marker = new google.maps.Marker({position: toronto, map: map});
 //markerAllOthers
-  var marker = new google.maps.Marker({position: montreal, map: map});
+  var marker = new google.maps.Marker({position: montreal, 
+                                       label: labels[2],
+                                       map: map});
   var marker = new google.maps.Marker({position: winnepeg, map: map});
   var marker = new google.maps.Marker({position: van, map: map});
   var marker = new google.maps.Marker({position: Mo, map: map});
