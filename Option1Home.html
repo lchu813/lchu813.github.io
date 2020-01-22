@@ -25,8 +25,15 @@
     </p4>
     <div id="map"></div>
     <script>
-  var labels = '123456789';
-  var labelIndex = 0;
+  var labeltoronto = '30K'
+  var labelmontreal = '19K'
+  var label3 = '30K'
+  var label4 = '30K'
+  var label5 = '30K'
+  var label6 = '30K'
+  var label7 = '30K'
+  var label8 = '30K'
+  var label9 = '30K'
   var label10 = '3,310';
   var label11 = '11';
   var label12 = '12';
@@ -36,6 +43,7 @@
   var label16 = '16';
   var label17 = '17';
   var label18 = '18';
+  var labelLo = '5K';
       
 
 function initMap() {
@@ -81,36 +89,36 @@ function initMap() {
       document.getElementById('map'), {zoom: 4, center: winnepeg});
 //markertoronto
   var marker = new google.maps.Marker({position: toronto, 
-                                       label: labels[0],
+                                       label: labeltoronto,
                                        map: map});
 //markerAllOthers
   var marker = new google.maps.Marker({position: montreal, 
-                                       label: labels[1],
+                                       label: labelmontreal,
                                        map: map});
   var marker = new google.maps.Marker({position: winnepeg, 
-                                       label: labels[2],
+                                       label: label3,
                                        map: map});
   
   
                                        
  
   var marker = new google.maps.Marker({position: Va, 
-                                       label: labels[3],
+                                       label: label4,
                                        map: map});
   var marker = new google.maps.Marker({position: Ca, 
-                                       label: labels[4],
+                                       label: label5,
                                        map: map});
   var marker = new google.maps.Marker({position: Ed, 
-                                       label: labels[5],
+                                       label: label6,
                                        map: map});
   var marker = new google.maps.Marker({position: OttOnt, 
-                                       label: labels[6],
+                                       label: label7,
                                        map: map});
   var marker = new google.maps.Marker({position: Kit, 
-                                       label: labels[7],
+                                       label: label8,
                                        map: map});
   var marker = new google.maps.Marker({position: Lo, 
-                                       label: labels[8],
+                                       label: labelLo,
                                        map: map});
   var marker = new google.maps.Marker({position: Ham, 
                                        label: labels[9],
