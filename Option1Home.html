@@ -18,15 +18,17 @@
     <script>
 
 function initMap() {
-//Lindsay
-//  var lindsay = {lat: 44.3410, lng: 78.7412};
+//Toronto
+  var toronto = {lat: 43.65107, lng: -79.347015};
 //Peterb
   var peterb= {lat: 44.266, lng: -78.374};
 //Peterb
   var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 15, center: peterb});
+      document.getElementById('map'), {zoom: 10, center: peterb});
 //markerLindsay
   var marker = new google.maps.Marker({position: peterb, map: map});
+//markertoronto
+  var marker = new google.maps.Marker({position: toronto, map: map});
 }
     </script>
     
