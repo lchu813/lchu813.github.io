@@ -25,8 +25,6 @@
 function initMap() {
 //Toronto
   var toronto = {lat: 43.65107, lng: -79.347015};
-//Peterb
-  var peterb= {lat: 44.266, lng: -78.374};
 
 //markerAllOthers
   var montreal = {lat: 45.508888, lng: -73.561668};
@@ -58,15 +56,13 @@ function initMap() {
   var St= {lat: 43.159374, lng: -79.246864};
   var Re= {lat: 52.268112, lng: -113.811241};
   var Ch= {lat: 46.238888, lng: -63.129166};
-  var Pe= {lat: 44.299999, lng: -78.316666};
+  var Peter= {lat: 44.299999, lng: -78.316666};
   var Br= {lat: 50.564167, lng: -111.898888};
 
   
 //Map
   var map = new google.maps.Map(
       document.getElementById('map'), {zoom: 4, center: winnepeg});
-//markerPeter
-  var marker = new google.maps.Marker({position: peterb, map: map});
 //markertoronto
   var marker = new google.maps.Marker({position: toronto, 
                                        label: labels[0],
@@ -125,7 +121,7 @@ function initMap() {
   var marker = new google.maps.Marker({position: St, map: map});
   var marker = new google.maps.Marker({position: Re, map: map});
   var marker = new google.maps.Marker({position: Ch, map: map});
-  var marker = new google.maps.Marker({position: Pe, map: map});
+  var marker = new google.maps.Marker({position: Peter, map: map});
   var marker = new google.maps.Marker({position: Br, map: map});
   
   
