@@ -25,28 +25,39 @@
     </p4>
     <div id="map"></div>
     <script>
-  var labeltoronto = '30K'
-  var labelmontreal = '19K'
-  var labelwinnepeg = '10K'
-  var labelVa = '10K'
-  var labelCa = '9K'
-  var labelEd = '9K'
-  var labelOttOnt = '8K'
-  var labelKit = '5K'
-  var labelLo = '5K'
-  var labelHam = '4K';
-  var labelWind = '4K';
-  var labelSh = '3K';
-  var labelHa = '3K';
-  var labelSask = '2K';
-  var labelQu = '2K';
-  var labelReg = '2K';
-  var labelStJ = '';
-  var labelOt = '';
-  var labelMo = '';
-      
+  var labeltoronto = '30,300'
+  var labelmontreal = '18,710'
+  var labelwinnepeg = '9,885'
+  var labelVa = '9,600'
+  var labelCa = '9,490'
+  var labelEd = '9,175'
+  var labelOttOnt = '9,530'
+  var labelKit = '4,555'
+  var labelLo = '4,555'
+  var labelHam = '4,335';
+  var labelWind = '4,155';
+  var labelSh = '3,310';
+  var labelHa = '2,915';
+  var labelSask = '2,580';
+  var labelQu = '2,375';
+  var labelReg = '2,045';
+  var labelStJ = '1,415';
+  var labelOt = '1,340';
+  var labelMo = '1,050';
+  var labelFr = '1,050';
+  var labelVi = '1,040';
+  var labelSa = '990';
+  var labelLe = '865';
+  var labelGu = '675';
+  var labelKi = '655';
+  var labelSt = '645';
+  var labelRe = '610';
+  var labelCh = '590';
+  var labelPeter = '535';
+  var labelBr = '535';
 
-function initMap() {
+      
+      function initMap() {
 //Toronto
   var toronto = {lat: 43.65107, lng: -79.347015};
 
@@ -127,42 +138,62 @@ function initMap() {
                                        label: labelWind,
                                        map: map});
   var marker = new google.maps.Marker({position: Sh,
-                                       label: label10,
+                                       label: labelSh,
                                        map: map});
   var marker = new google.maps.Marker({position: Ha, 
-                                       label: label11,
+                                       label: labelHa,
                                        map: map});
   var marker = new google.maps.Marker({position: Sask, 
-                                       label: label12,
+                                       label: labelSask,
                                        map: map});
   var marker = new google.maps.Marker({position: Qu, 
-                                       label: label13,
+                                       label: labelQu,
                                        map: map});
   var marker = new google.maps.Marker({position: Reg, 
-                                       label: label14,
+                                       label: labelReg,
                                        map: map});
   var marker = new google.maps.Marker({position: StJ, 
-                                       label: label15,
+                                       label: labelStJ,
                                        map: map});
   var marker = new google.maps.Marker({position: Ot, 
-                                       label: label16,
+                                       label: labelOt,
                                        map: map});
   var marker = new google.maps.Marker({position: Mo, 
-                                       label: label17,
+                                       label: labelMo,
                                        map: map});
   var marker = new google.maps.Marker({position: Fr, 
-                                       label: label18,
+                                       label: labelFr,
                                        map: map});
-  var marker = new google.maps.Marker({position: Vi, map: map});
-  var marker = new google.maps.Marker({position: Sa, map: map});
-  var marker = new google.maps.Marker({position: Le, map: map});
-  var marker = new google.maps.Marker({position: Gu, map: map});
-  var marker = new google.maps.Marker({position: Ki, map: map});
-  var marker = new google.maps.Marker({position: St, map: map});
-  var marker = new google.maps.Marker({position: Re, map: map});
-  var marker = new google.maps.Marker({position: Ch, map: map});
-  var marker = new google.maps.Marker({position: Peter, map: map});
-  var marker = new google.maps.Marker({position: Br, map: map});
+  var marker = new google.maps.Marker({position: Vi, 
+                                       label: labelVi,
+                                       map: map});
+  var marker = new google.maps.Marker({position: Sa, 
+                                       label: labelSa,
+                                       map: map});
+  var marker = new google.maps.Marker({position: Le, 
+                                       label: labelLe,
+                                       map: map});
+  var marker = new google.maps.Marker({position: Gu, 
+                                       label: labelGu,
+                                       map: map});
+  var marker = new google.maps.Marker({position: Ki, 
+                                       label: labelKi,
+                                       map: map});
+  var marker = new google.maps.Marker({position: St, 
+                                       label: labelSt,
+                                       map: map});
+  var marker = new google.maps.Marker({position: Re, 
+                                       label: labelRe,
+                                       map: map});
+  var marker = new google.maps.Marker({position: Ch, 
+                                       label: labelCh,
+                                       map: map});
+  var marker = new google.maps.Marker({position: Peter, 
+                                       label: labelPeter,
+                                       map: map});
+  var marker = new google.maps.Marker({position: Br, 
+                                       label: labelBr,
+                                       map: map});
   
   
   
