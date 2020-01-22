@@ -34,6 +34,9 @@ p    {
     <p>
       <img src ="http://maps.google.com/mapfiles/ms/icons/blue-dot.png">
       Cities with less than 1000 refugees
+      <b></b>
+      <img src = "http://maps.google.com/mapfiles/ms/icons/purple-dot.png">
+      Cities with 1000 to 5000 refugees
     </p>
     
     
@@ -208,6 +211,8 @@ var ctaLayer = new google.maps.KmlLayer({
                                        map: map});
   var marker = new google.maps.Marker({position: Vi, 
                                        label: labelVi,
+                                       icon: {
+      url: "http://maps.google.com/mapfiles/ms/icons/purple-dot.png"},
                                        map: map});
   var marker = new google.maps.Marker({position: Sa, 
                                        label: labelSa,
