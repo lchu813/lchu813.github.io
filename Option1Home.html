@@ -25,6 +25,10 @@
     </p4>
     <div id="map"></div>
     <script>
+      
+      
+  var featureWeight = 100
+  
   var labeltoronto = '30,300'
   var labelmontreal = '18,710'
   var labelwinnepeg = '9,885'
@@ -101,6 +105,7 @@
 //markertoronto
   var marker = new google.maps.Marker({position: toronto, 
                                        label: labeltoronto,
+                                       zindex: featureWeight,
                                        map: map});
 //markerAllOthers
   var marker = new google.maps.Marker({position: montreal, 
