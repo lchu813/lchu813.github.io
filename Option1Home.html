@@ -66,13 +66,19 @@ function initMap() {
 //markerPeter
   var marker = new google.maps.Marker({position: peterb, map: map});
 //markertoronto
-  var marker = new google.maps.Marker({position: toronto, map: map});
+  var marker = new google.maps.Marker({position: toronto, 
+                                       label: labels[0],
+                                       map: map});
 //markerAllOthers
   var marker = new google.maps.Marker({position: montreal, 
+                                       label: labels[1],
+                                       map: map});
+  var marker = new google.maps.Marker({position: winnepeg, 
                                        label: labels[2],
                                        map: map});
-  var marker = new google.maps.Marker({position: winnepeg, map: map});
-  var marker = new google.maps.Marker({position: van, map: map});
+  var marker = new google.maps.Marker({position: van, 
+                                       label: labels[3],
+                                       map: map});
   var marker = new google.maps.Marker({position: Mo, map: map});
   var marker = new google.maps.Marker({position: Wi, map: map});
   var marker = new google.maps.Marker({position: Va, map: map});
