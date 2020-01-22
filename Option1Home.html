@@ -25,6 +25,7 @@ function initMap() {
 
 //markerAllOthers
   var montreal = {lat: 45.508888, lng: -73.561668};
+  var winnepeg = {lat: 49.895077, lng: -97.138451};
   
 //Map
   var map = new google.maps.Map(
@@ -35,7 +36,7 @@ function initMap() {
   var marker = new google.maps.Marker({position: toronto, map: map});
 //markerAllOthers
   var marker = new google.maps.Marker({position: montreal, map: map});
-  var marker = new google.maps.Marker({position: {lat: 49.895077, lng: -97.138451}, map: map});
+  var marker = new google.maps.Marker({position: winnepeg, map: map});
 }
     </script>
     
