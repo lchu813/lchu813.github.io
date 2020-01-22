@@ -140,10 +140,13 @@ p    {
           zoom: 4, 
           center: winnepeg
       });
+        
+//Add the Census Metropolitian areas polygons (CMA)
   var ctaLayer2 = new google.maps.KmlLayer({
           url: 'https://lchu813.github.io/gcma000b11a_e.kml',
           map: map        
         });
+//Add the Outline of Canada
   var ctaLayer = new google.maps.KmlLayer({
           url: 'https://lchu813.github.io/Canada.kml',
           map: map        
@@ -242,7 +245,7 @@ p    {
   var marker = new google.maps.Marker({position: Sa, 
                                        label: labelSa,
                                        icon: {
-      url: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png"},
+      url: "http://maps.google.com/mapfiles/ms/icons/blu-blank.png"},
                                        map: map});
   var marker = new google.maps.Marker({position: Le, 
                                        label: labelLe,
