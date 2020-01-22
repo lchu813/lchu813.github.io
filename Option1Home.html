@@ -130,18 +130,22 @@ p    {
 
   
 //Map
-  var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 4, center: winnepeg});
-        
-var ctaLayer = new google.maps.KmlLayer({
-          url: 'https://lchu813.github.io/Canada.kml',
-          map: map        
-        });
+
         
  var ctaLayer2 = new google.maps.KmlLayer({
           url: 'https://lchu813.github.io/gcma000b11a_e.kml',
           map: map        
         });
+  var ctaLayer = new google.maps.KmlLayer({
+          url: 'https://lchu813.github.io/Canada.kml',
+          map: map        
+        });
+        
+  var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4, 
+          center: winnepeg
+      });
+        
 //markertoronto
   var marker = new google.maps.Marker({position: toronto, 
                                        label: labeltoronto,
