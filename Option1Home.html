@@ -12,7 +12,7 @@
     <h1>Refugee Resettlement</h1>
     <p> Refugee resettlement in Canada. Here are some cities that should consider their refugee populations. 
     </p>
-    <p1> Number 1 for refugee resettlement is Toronto Ontario with 30, 300 people settling as refugees between 2015 - 2019. 
+    <p1> Number 1 for refugee resettlement is Toronto Ontario with 30, 300 people settling as refugees between 2015 - 2019. Cities that accepted less than 500 refugees were not included on this map.
     </p1>
     
     <p2> Source: Statistics Canada.  Table  17-10-0135-01   Population estimates, July 1, by census metropolitan area and census agglomeration, 2016 boundaries
@@ -64,7 +64,7 @@ function initMap() {
   
 //Map
   var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 3, center: winnepeg});
+      document.getElementById('map'), {zoom: 4, center: winnepeg});
 //markerPeter
   var marker = new google.maps.Marker({position: peterb, map: map});
 //markertoronto
