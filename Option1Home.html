@@ -36,7 +36,10 @@ p    {
       Cities with less than 1000 refugees
       <b></b>
       <img src = "http://maps.google.com/mapfiles/ms/icons/purple-dot.png">
-      Cities with 1000 to 5000 refugees
+      Cities with 1000 to 4000 refugees
+      <b></b>
+      Cities with greater than 4000 refugees
+      Red Icon
     </p>
     
     
@@ -132,7 +135,12 @@ p    {
 //Map
 
         
- var ctaLayer2 = new google.maps.KmlLayer({
+ 
+  var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4, 
+          center: winnepeg
+      });
+  var ctaLayer2 = new google.maps.KmlLayer({
           url: 'https://lchu813.github.io/gcma000b11a_e.kml',
           map: map        
         });
@@ -140,11 +148,6 @@ p    {
           url: 'https://lchu813.github.io/Canada.kml',
           map: map        
         });
-        
-  var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4, 
-          center: winnepeg
-      });
         
 //markertoronto
   var marker = new google.maps.Marker({position: toronto, 
