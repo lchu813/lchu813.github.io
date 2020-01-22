@@ -38,8 +38,8 @@ p    {
       <img src = "http://maps.google.com/mapfiles/ms/icons/purple.png">
       Cities with 1000 to 4000 refugees
       <b></b>
+      <img src = "http://maps.google.com/mapfiles/kml/paddle/red-blank.png">
       Cities with greater than 4000 refugees
-      Red Icon
     </p>
     
     
@@ -155,6 +155,11 @@ p    {
 //markertoronto
   var marker = new google.maps.Marker({position: toronto, 
                                        label: labeltoronto,
+                                       icon:
+                                       {
+      url: "http://maps.google.com/mapfiles/kml/paddle/red-blank.png"},
+                                       
+                                       
                                        ZIndex: featureWeight,
                                        map: map});
 //markerAllOthers
