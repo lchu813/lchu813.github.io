@@ -48,11 +48,11 @@
       }
       
           // Trailheads feature layer (points)
-      var trailheadsLayer = new FeatureLayer({
-        url: "https://services3.arcgis.com/GVgbJbqm8hXASVYi/arcgis/rest/services/Trailheads/FeatureServer/0"
+      var provincesLayer = new FeatureLayer({
+        url: "https://luna.flemingcollege.ca/arcgis/rest/services/Geom99on/LCHUCanadaPro/MapServer/0"
       });
 
-      map.add(trailheadsLayer);
+      map.add(provincesLayer);
       
       //*** Add event and show center coordinates after the view is finished moving e.g. zoom, pan ***//
       view.watch(["stationary"], function() {
