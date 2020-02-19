@@ -4,7 +4,55 @@
 <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>Canada Map</title>
   </head>
+<link rel="stylesheet" href="https://js.arcgis.com/4.13/esri/css/main.css">
+  <script src="https://js.arcgis.com/4.13/"></script>
   
+  <script>  
+    require([
+      "esri/Map",
+      "esri/views/MapView"
+    ], function(Map, MapView) {
+
+      var map = new Map({
+        basemap: "topo-vector"
+      });
+      
+      var view = new MapView({
+        container: "viewDiv",
+        map: map,
+        center: [-80.00000,45.00000],
+        zoom: 5
+      });
+      
+      //*** Add div element to show coordates ***//
+      var coordsWidget = document.createElement("div");
+      coordsWidget.id = "coordsWidget";
+      coordsWidget.className = "esri-widget esri-component";
+      coordsWidget.style.padding = "7px 15px 5px";
+      view.ui.add(coordsWidget, "bottom-right");
+
+      //*** Update lat, lon, zoom and scale ***//
+      function showCoordinates(pt) {
+        var coords = "Lat/Lon " + pt.latitude.toFixed(3) + " " + pt.longitude.toFixed(3) + 
+            " | Scale 1:" + Math.round(view.scale * 1) / 1 +
+            " | Zoom " + view.zoom;
+        coordsWidget.innerHTML = coords;
+      }
+      
+      //*** Add event and show center coordinates after the view is finished moving e.g. zoom, pan ***//
+      view.watch(["stationary"], function() {
+        showCoordinates(view.center);
+      });
+
+      //*** Add event to show mouse coordinates on click and move ***//
+      view.on(["pointer-down","pointer-move"], function(evt) {
+        showCoordinates(view.toMap({ x: evt.x, y: evt.y }));
+      });
+      
+
+      
+    });
+  </script>  
 <body>
   <h1> Provinces of Canada</h1>
   <p> The 10 Provinces of Canada are shown on the map below!!! </p>
