@@ -1,0 +1,225 @@
+{
+ "currentVersion": 10.71,
+ "cimVersion": "2.4.0",
+ "id": 0,
+ "name": "Canada",
+ "type": "Feature Layer",
+ "description": "Canada",
+ "geometryType": "esriGeometryPolygon",
+ "sourceSpatialReference": {
+  "wkt": "PROJCS[\"PCS_Lambert_Conformal_Conic\",GEOGCS[\"GCS_North_American_1983\",DATUM[\"D_North_American_1983\",SPHEROID[\"GRS_1980\",6378137.0,298.257222101]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Lambert_Conformal_Conic\"],PARAMETER[\"False_Easting\",6200000.0],PARAMETER[\"False_Northing\",3000000.0],PARAMETER[\"Central_Meridian\",-91.86666666666666],PARAMETER[\"Standard_Parallel_1\",49.0],PARAMETER[\"Standard_Parallel_2\",77.0],PARAMETER[\"Latitude_Of_Origin\",63.390675],UNIT[\"Meter\",1.0]]",
+  "xyTolerance": 0.001,
+  "zTolerance": 0.001,
+  "mTolerance": 0.001,
+  "falseX": -28455800,
+  "falseY": -28572600,
+  "xyUnits": 1.2995226274881823E8,
+  "falseZ": -100000,
+  "zUnits": 10000,
+  "falseM": -100000,
+  "mUnits": 10000
+ },
+ "copyrightText": "",
+ "parentLayer": null,
+ "subLayers": [],
+ "minScale": 0,
+ "maxScale": 0,
+ "drawingInfo": {
+  "renderer": {
+   "type": "simple",
+   "symbol": {
+    "type": "esriSFS",
+    "style": "esriSFSSolid",
+    "color": [
+     203,
+     191,
+     252,
+     255
+    ],
+    "outline": {
+     "type": "esriSLS",
+     "style": "esriSLSSolid",
+     "color": [
+      110,
+      110,
+      110,
+      255
+     ],
+     "width": 0.7
+    }
+   }
+  },
+  "scaleSymbols": true,
+  "transparency": 0,
+  "labelingInfo": null
+ },
+ "defaultVisibility": true,
+ "extent": {
+  "xmin": 3689439.0113999993,
+  "ymin": 659338.8599999994,
+  "xmax": 9015736.631399997,
+  "ymax": 5242088.937100001,
+  "spatialReference": {
+   "wkt": "PROJCS[\"PCS_Lambert_Conformal_Conic\",GEOGCS[\"GCS_North_American_1983\",DATUM[\"D_North_American_1983\",SPHEROID[\"GRS_1980\",6378137.0,298.257222101]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Lambert_Conformal_Conic\"],PARAMETER[\"False_Easting\",6200000.0],PARAMETER[\"False_Northing\",3000000.0],PARAMETER[\"Central_Meridian\",-91.86666666666666],PARAMETER[\"Standard_Parallel_1\",49.0],PARAMETER[\"Standard_Parallel_2\",77.0],PARAMETER[\"Latitude_Of_Origin\",63.390675],UNIT[\"Meter\",1.0]]",
+   "xyTolerance": 0.001,
+   "zTolerance": 0.001,
+   "mTolerance": 0.001,
+   "falseX": -28455800,
+   "falseY": -28572600,
+   "xyUnits": 10000,
+   "falseZ": -100000,
+   "zUnits": 10000,
+   "falseM": -100000,
+   "mUnits": 10000
+  }
+ },
+ "hasAttachments": false,
+ "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+ "displayField": "PRNAME",
+ "typeIdField": null,
+ "subtypeFieldName": null,
+ "subtypeField": null,
+ "defaultSubtypeCode": null,
+ "fields": [
+  {
+   "name": "FID",
+   "type": "esriFieldTypeOID",
+   "alias": "FID",
+   "domain": null
+  },
+  {
+   "name": "Shape",
+   "type": "esriFieldTypeGeometry",
+   "alias": "Shape",
+   "domain": null
+  },
+  {
+   "name": "PRUID",
+   "type": "esriFieldTypeString",
+   "alias": "PRUID",
+   "length": 2,
+   "domain": null
+  },
+  {
+   "name": "PRNAME",
+   "type": "esriFieldTypeString",
+   "alias": "PRNAME",
+   "length": 100,
+   "domain": null
+  },
+  {
+   "name": "PRENAME",
+   "type": "esriFieldTypeString",
+   "alias": "PRENAME",
+   "length": 100,
+   "domain": null
+  },
+  {
+   "name": "PRFNAME",
+   "type": "esriFieldTypeString",
+   "alias": "PRFNAME",
+   "length": 100,
+   "domain": null
+  },
+  {
+   "name": "PREABBR",
+   "type": "esriFieldTypeString",
+   "alias": "PREABBR",
+   "length": 10,
+   "domain": null
+  },
+  {
+   "name": "PRFABBR",
+   "type": "esriFieldTypeString",
+   "alias": "PRFABBR",
+   "length": 10,
+   "domain": null
+  },
+  {
+   "name": "InPoly_FID",
+   "type": "esriFieldTypeInteger",
+   "alias": "InPoly_FID",
+   "domain": null
+  },
+  {
+   "name": "SimPgnFlag",
+   "type": "esriFieldTypeInteger",
+   "alias": "SimPgnFlag",
+   "domain": null
+  },
+  {
+   "name": "MaxSimpTol",
+   "type": "esriFieldTypeDouble",
+   "alias": "MaxSimpTol",
+   "domain": null
+  },
+  {
+   "name": "MinSimpTol",
+   "type": "esriFieldTypeDouble",
+   "alias": "MinSimpTol",
+   "domain": null
+  },
+  {
+   "name": "Shape_STAr",
+   "type": "esriFieldTypeDouble",
+   "alias": "Shape_STAr",
+   "domain": null
+  },
+  {
+   "name": "Shape_STLe",
+   "type": "esriFieldTypeDouble",
+   "alias": "Shape_STLe",
+   "domain": null
+  }
+ ],
+ "geometryField": {
+  "name": "Shape",
+  "type": "esriFieldTypeGeometry",
+  "alias": "Shape"
+ },
+ "indexes": [
+  {
+   "name": "Shape",
+   "fields": "Shape",
+   "isAscending": true,
+   "isUnique": false,
+   "description": ""
+  }
+ ],
+ "subtypes": [],
+ "relationships": [],
+ "canModifyLayer": true,
+ "canScaleSymbols": false,
+ "hasLabels": false,
+ "capabilities": "Map,Query,Data",
+ "maxRecordCount": 2000,
+ "supportsStatistics": false,
+ "supportsAdvancedQueries": false,
+ "supportedQueryFormats": "JSON, geoJSON, PBF",
+ "isDataVersioned": false,
+ "ownershipBasedAccessControlForFeatures": {"allowOthersToQuery": true},
+ "useStandardizedQueries": true,
+ "advancedQueryCapabilities": {
+  "useStandardizedQueries": true,
+  "supportsStatistics": false,
+  "supportsHavingClause": false,
+  "supportsOrderBy": false,
+  "supportsDistinct": false,
+  "supportsCountDistinct": false,
+  "supportsPagination": false,
+  "supportsTrueCurve": true,
+  "supportsReturningQueryExtent": true,
+  "supportsQueryWithDistance": true,
+  "supportsSqlExpression": false
+ },
+ "supportsDatumTransformation": true,
+ "dateFieldsTimeReference": null,
+ "hasMetadata": true,
+ "isDataArchived": false,
+ "archivingInfo": {
+  "supportsQueryWithHistoricMoment": false,
+  "startArchivingMoment": -1
+ },
+ "supportsCoordinatesQuantization": true,
+ "supportsDynamicLegends": true
+}
