@@ -46,14 +46,7 @@
             " | Zoom " + view.zoom;
         coordsWidget.innerHTML = coords;
       }
-      
-          // Trailheads feature layer (points)
-      var provincesLayer = new FeatureLayer({
-        url: "https://luna.flemingcollege.ca/arcgis/rest/services/Geom99on/LCHUCanadaPro/MapServer/0"
-      });
-
-      map.add(provincesLayer);
-      
+            
       //*** Add event and show center coordinates after the view is finished moving e.g. zoom, pan ***//
       view.watch(["stationary"], function() {
         showCoordinates(view.center);
@@ -63,7 +56,12 @@
       view.on(["pointer-down","pointer-move"], function(evt) {
         showCoordinates(view.toMap({ x: evt.x, y: evt.y }));
       });
-      
+                // Trailheads feature layer (points)
+    //  var provincesLayer = new FeatureLayer({
+    //    url: "https://luna.flemingcollege.ca/arcgis/rest/services/Geom99on/LCHUCanadaPro/MapServer/0"
+    //  });
+
+    //  map.add(provincesLayer);
 
       
     });
